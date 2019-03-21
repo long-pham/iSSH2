@@ -100,7 +100,7 @@ export SDK_PLATFORM=
 export EMBED_BITCODE="-fembed-bitcode"
 
 OSX_ARCHS="x86_64"
-IOS_ARCHS="armv7 armv7s arm64"
+IOS_ARCHS="arm64 arm64e armv7 armv7m armv7s"
 
 BUILD_OSX=false
 BUILD_SSL=true

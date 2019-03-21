@@ -78,6 +78,10 @@ do
       HOST="$ARCH-apple-darwin"
     fi
 
+    if [[ "$ARCH" == "arm64e" ]]; then
+      HOST="aarch64-apple-darwin"
+    fi
+
     export DEVROOT="$DEVELOPER/Platforms/$PLATFORM.platform/Developer"
     export SDKROOT="$DEVROOT/SDKs/$PLATFORM$SDK_VERSION.sdk"
     export CC="$CLANG"
